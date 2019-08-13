@@ -1,37 +1,63 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+# Site settings
+title: Starving Artist Jekyll Theme
+email: ctarwater@chrisanthropic.com
+author: Chrisanthropic
 
-# Setup
-title:            Peon Pasado
-tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
-url:              https://peon-pasado.github.io
-baseurl:          '/inexorable-programmer'
-                  # the optional subpath of your site, e.g. "/blog"
-                  # NB: This applies to all pages in your Jekyll site.
-                  # If you want to move just the blog index pages but keep
-                  # other pages at root, see the paginate_path and
-                  # sidebar_blog_link below.
+keywords: jekyll, jekyll theme, portfolio theme, artist theme
+description: Witty description here.
 
-remote_theme: fongandrew/hydeout
+# Only use this if you are serving your site via Github Pages
+github:
+  url: "https://chrisanthropic.github.io/starving-artist-jekyll-theme"
 
-author:
-  name:           'Miguel Mini'
-  url:            
+header: images/logo.png
 
-paginate:         5
-# paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
+# Formspree contact Form
+contact_form: "https://formspree.io/ctarwater@chrisanthropic.com"
 
-plugins:
+
+# Exclude our ruby stuff
+exclude: [.bundle, .vendor, .bin, starving-artist.gemspec, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, starving-artist-jekyll-theme-*.gem]
+
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+theme: starving-artist-jekyll-theme
+  
+# Plugins
+gems:
   - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
 
-# Sidebar link settings
-sidebar_home_link:  true
-# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
-                                # page. If you change your paginate_path,
-                                # set this to the root of the paginate_path
-                                # to enable a separate blog link.
+feed:
+  path: atom.xml
+  
+# Compress our Css
+#sass:
+#    style: :compressed
+
+include: ['_pages']
+
+permalink: /blog/:year/:title
+
+collections:
+  - galleries
+
+#### SEO Stuff
+# Google Analytics
+google_universal_analytics: 
+google_universal_analytics_cookiedomain: auto
+
+# Facebook Opengraph
+facebook_user:
+facebook_app_id:                                #enter your App ID
+facebook_locale: en_US
+facebook_page:                                  #the URL of your Facebook Page
+facebook_image: images/author.jpg                      #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
+
+# Twitter Cards
+twitter_user: 
+twitter_card: true
+twitter_image: images/author.jpg                       #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
