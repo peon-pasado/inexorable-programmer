@@ -6,7 +6,7 @@ siguiente problema:
 Se le proporciona un grafo con n <= 40 nodos (posiblemente completo). 
 Debe imprimir el cardinal del [maximo conjunto independiente](https://en.wikipedia.org/wiki/Maximal_independent_set).
 
-![MIS](https://en.wikipedia.org/wiki/Maximal_independent_set#/media/File:Cube-maximal-independence.svg)
+![MIS](https://upload.wikimedia.org/wikipedia/commons/b/b6/Cube-maximal-independence.svg)
 
 Usted comienza a pensar como solucionar este problema, a primera vista
 un brute force solution no ayudaria, el tiempo se le escapa, piensa que tal 
