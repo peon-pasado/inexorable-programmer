@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Brute Force: Partitions
 
 $x**2 = 10$
