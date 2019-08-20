@@ -4,7 +4,11 @@ layout: default
 
 # Brute Force: Partitions
 
-$$x^2 = 10$$
+dfdf
+
+{% katex %}
+c = \pm\sqrt{a^2 + b^2}
+{% endkatex %}
 
 dsfjlshfjs
 
